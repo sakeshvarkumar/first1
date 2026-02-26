@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: rgb(62, 136, 185);
+    }
+    .hi{
+        
+        color: aqua;
+        height: 100;
+        width: 100;
+    }
+</style>
+<body>
+    
+    <div>
+         <table border="solid" style="color: rgb(0, 0, 0);">
+        <tr>
+            <th> 2:30 PM to 3:30 PM</th>
+            <th> mathematics</th>
+        </tr>
+        <tr>
+            <th>3:30 PM to 4:00 PM</th>
+            <th>General Intelligence and reasoning</th>
+        </tr>
+        <tr>
+            <th>4:00 PM to 5:00 PM</th>
+            <th>General scince</th>
+        </tr>
+        <tr>
+            <th>5:00 PM to 5:30 PM</th>
+            <th>General Awareness on current affairs</th>
+        </tr>
+    </table>
+    </div>
+
+   
+</body>
+</html>
