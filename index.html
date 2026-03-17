@@ -1,64 +1,274 @@
+<!-- C reated by Nikhil -->
+
+<!-- Date 22 - aug- 2025-->
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Time_Table</title>
-</head>
-    <style>
-    body{
-        background-color: rgb(62, 136, 185);
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday </title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: radial-gradient( #E6E6FA );
+    
+      text-align: center;
+      overflow-x: hidden;
+      color: #444;
     }
-   
-</style>
-<body>
-    <p>*This is a time table for improve your knowledge and discipline</p>
-    <table border="dotted">
-        <caption><strong>TIME TABLE</strong></caption>
-        <tr>
-            <th><b>Time</b></th>
-            <th><b>Activity</b></th>
-        </tr>
-        <tr>
-            <th>6:00 AM</th>
-            <th>wake up </th>
-        </tr>
-        <tr>
-            <th>6:00 AM to 7:00 AM</th>
-            <th>01:theory of computation, 02:Web Technology.</th>
-        </tr>
-        <tr>
-            <th>8:00 AM to 1:00 PM</th>
-            <th>Collage study and works</th>
-        </tr>
-        <tr>
-            <th>1:00 PM to 2:00 PM</th>
-            <th> Lunch Time</th>
-        </tr>
-        <tr>
-            <th>2:00 PM to 6:00 PM</th>
-            <th>
-            <a href="study.html"> 2 Hours compition exam prepering in your confort</a>
-            </th>
-        </tr>
-        <tr>
-            <th>6:00 PM to 8:00 PM</th>
-            <th>Night Lunch Time</th>
-        </tr>
-        <tr>
-            <th>8:00 PM to 11:00 PM</th>
-            <th>2 hours collage subjects study,and other skill develop. </th>
-        </tr>
-        <tr>
-            <th>11:00 PM</th>
-            <th>Slipping Time </th>
-        </tr>
 
-    </table>
+    header {
+      padding: 50px 20px 10px;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      color: #e75480;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #666;
+    }
+
+    /* Flowers floating */
+    .flower {
+      position: absolute;
+      width: 35px;
+      height: 35px;
+      background: radial-gradient(circle at center, #00ffff 40%, transparent 41%);
+      border-radius: 50%;
+      animation: floatFlower 12s linear infinite;
+      opacity: 0.7;
+    }
+    .flower::before, .flower::after {
+      content: "";
+      position: absolute;
+      width: 35px;
+      height: 35px;
+      background: radial-gradient(circle at center, #00ffbc 40%, transparent 41%);
+      border-radius: 50%;
+    }
+    .flower::before { top: -18px; left: 0; }
+    .flower::after { top: 8px; left: 18px; }
+
+    @keyframes floatFlower {
+      0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+      100% { transform: translateY(-120vh) rotate(360deg); opacity: 0; }
+    }
+
+    
+  
+/* Cake */
+.cake {
+  margin: 190px auto 20px; /* increased top margin */
+  width: 220px;
+  position: relative;
+}
+
+    .layer {
+      height: 60px;
+      border-radius: 0 0 15px 15px;
+      position: relative;
+      margin: 0 auto 8px;
+    }
+
+    .layer1 {
+      width: 220px;
+      background: #ffc0cb;
+      box-shadow: inset 0 -8px #ff99aa;
+    }
+    .layer2 {
+      width: 180px;
+      background: #ffb6c1;
+      box-shadow: inset 0 -8px #ff8fa2;
+    }
+    .layer3 {
+      width: 140px;
+      background: #ffe4e1;
+      box-shadow: inset 0 -8px #ffcad4;
+    }
+
+    /* Icing drips */
+    .icing {
+      position: absolute;
+      top: -18px;
+      width: 100%;
+      height: 25px;
+      background: #fff;
+      border-radius: 15px 15px 0 0;
+      box-shadow: inset 0 -5px #ffe4e1;
+    }
+    .drip {
+      position: absolute;
+      width: 20px;
+      height: 25px;
+      background: #fff;
+      border-radius: 10px;
+      top: 10px;
+    }
+    .drip1 { left: 30px; }
+    .drip2 { left: 80px; }
+    .drip3 { left: 140px; }
+
+    /* Candle */
+    .candle {
+      position: absolute;
+      top: -70px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 20px;
+      height: 70px;
+      background: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 5px #ccc;
+    }
+    .flame {
+      position: absolute;
+      top: -25px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 20px;
+      height: 25px;
+      background: radial-gradient(circle at 50% 40%, #ffeb3b, #ff9800);
+      border-radius: 50%;
+      animation: flicker 0.3s infinite alternate;
+      box-shadow: 0 0 20px 5px rgba(255,200,0,0.5);
+    }
+    @keyframes flicker {
+      from { transform: translateX(-50%) scale(1); }
+      to { transform: translateX(-50%) scale(1.2); }
+    }
+
+    /* Burning Message */
+    .burning-message {
+      position: absolute;
+      top: -110px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 1.2rem;
+      color: #e75480;
+      font-weight: bold;
+      animation: rise 3s ease-in-out infinite;
+    }
+
+    @keyframes rise {
+      0% { opacity: 0; transform: translateX(-50%) translateY(20px); }
+      50% { opacity: 1; transform: translateX(-50%) translateY(0px); }
+      100% { opacity: 0; transform: translateX(-50%) translateY(-20px); }
+    }
+
+    /* Button */
+    .btn {
+      margin-top: 25px;
+      padding: 12px 30px;
+      background: #ffb6c1;
+      border: none;
+      border-radius: 25px;
+      font-size: 1rem;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .btn:hover {
+      background: #ff6f91;
+    }
+
+    /* Popup */
+    .popup {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.5);
+      justify-content: center;
+      align-items: center;
+      z-index: 10;
+    }
+    .popup-content {
+      background: #fff;
+      padding: 30px;
+      border-radius: 15px;
+      max-width: 350px;
+      text-align: center;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+      animation: zoom 0.5s ease forwards;
+    }
+    .popup-content h2 {
+      color: #e75480;
+    }
+
+    @keyframes zoom {
+      from { transform: scale(0.7); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🌸 Happy Birthday 🌸<br /> Ankur...❤ </h1>
+    <p>Wishing you a day as sweet and bright as this candlelight 🎂</p>
+  </header>
+  <button class="btn" onclick="showMessage()">Open Surprise 🎁</button>
+  <!-- Cake -->
+  <div class="cake">
+    <div class="candle">
+      <div class="flame"></div>
+      <div class="burning-message">Ankur...❤</div>
+    </div>
+    <div class="layer layer3">
+      <div class="icing">
+        <div class="drip drip1"></div>
+        <div class="drip drip2"></div>
+        <div class="drip drip3"></div>
+      </div>
+    </div>
+    <div class="layer layer2">
+      <div class="icing">
+        <div class="drip drip1"></div>
+        <div class="drip drip2"></div>
+      </div>
+    </div>
+    <div class="layer layer1">
+      <div class="icing">
+        <div class="drip drip1"></div>
+        <div class="drip drip2"></div>
+        <div class="drip drip3"></div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Flowers via JS -->
+  <script>
+    function createFlower() {
+      const flower = document.createElement("div");
+      flower.classList.add("flower");
+      flower.style.left = Math.random() * 100 + "vw";
+      flower.style.animationDuration = (10 + Math.random() * 5) + "s";
+      document.body.appendChild(flower);
+      setTimeout(()=>flower.remove(), 15000);
+    }
+    setInterval(createFlower, 900);
+
+    function showMessage() {
+      document.getElementById("popup").style.display = "flex";
+    }
+    function closeMessage() {
+      document.getElementById("popup").style.display = "none";
+    }
+  </script>
+
+  <!-- Popup -->
+  <div class="popup" id="popup" onclick="closeMessage()">
+    <div class="popup-content">
+      <h2>Happy Birthday To You...</h2>
+      <p>🌺 May your life shine as bright as this candle flame. 🌺</p>
+    </div>
+  </div>
 </body>
 </html>
-
-
-
-
-
-
